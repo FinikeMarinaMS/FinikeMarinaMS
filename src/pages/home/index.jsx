@@ -13,7 +13,7 @@ export default function Home(){
         </div>
 
         <Sidebar />
-        <div className="flex-1">
+        <div className=" ml-[331px]">
           <Content />
         </div>
 

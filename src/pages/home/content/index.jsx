@@ -3,26 +3,26 @@ import HavaDurumu from "./hava-durumu"
 import Uyarilar from "./uyarilar"
 import Mail from "./mail";
 import Ruzgar from "./ruzgar";
+import TekneKayit from "~/pages/kayit";
+import { Link } from "react-router-dom";
 
 export default function Content(){
     return (
-      <div className="bg-cover flex-1 ml-8 px-[40px] py-[40px] gap-x-[50px] gap-y-[50px] ">
-        <div className="grid grid-cols-3 grid-rows-2 w-[1100px] h-[80vh] bg-white ml-[410px] mt-16 bg-opacity-0 gap-14  grid-flow-col ">
-          <div className="col-start-1 col-span-1">
+      <div className="w-[187vh] h-[500px] min-h-screen  flex justify-center pt-20 px-10 pb-5 ">
+        <div className="grid grid-cols-4 grid-rows-3 gap-4 w-full h-full">
+          <div className=" col-span-2 row-span-2  rounded-lg   bg-white">
             <Mail />
           </div>
-          <div className="col-start-2 col-span-1">
-            <Bildirimler />
-          </div>
-          <div className="col-start-3 col-span-1">
+          <div className=" col-span-2 row-span-2  rounded-lg   bg-white">
             <Uyarilar />
           </div>
-          <div className=" col-start-1 col-span-2">
-            <HavaDurumu />
-          </div>
-          <div className=" col-start-3 col-span-2">
-            <Ruzgar/>
-          </div>
+          <div className=" col-span-1 row-span-2  rounded-lg    bg-white"></div>
+          <Link
+            className="col-span-3 row-span-2  rounded-lg hover:shadow-md    bg-white"
+            to={"/takip"}
+          ></Link>
+
+          {/* <div className=" col-span-3 row-span-2  rounded-lg hover:shadow-md    bg-white"></div> */}
         </div>
       </div>
     );

@@ -7,7 +7,67 @@ export default function Register(){
         <div className="flex justify-center">
           <div className="w-[214vh] h-[100vh] px-8 flex justify-center">
             <div className="flex flex-row">
-              <div className="w-[107vh] h-[80vh] p-8 border"></div>
+              <div className="w-[107vh] h-[80vh] p-8 border grid grid-cols-3 grid-rows-6">
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    İsim
+                  </label>
+                  <input
+                    placeholder="İsim"
+                    type="text"
+                    className="w-full rounded-md"
+                  />
+                </form>
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    Soyisim
+                  </label>
+                  <input
+                    placeholder="Soyisim"
+                    type="text"
+                    className="w-full rounded-md"
+                  />
+                </form>
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    Uyruk
+                  </label>
+                  <select className="w-full rounded-md" name="" id="">
+                    <option selected>Uyruk Giriniz</option>
+                  </select>
+                </form>
+
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    Kimlik/Pasaport Numarası
+                  </label>
+                  <input
+                    placeholder=""
+                    type="number"
+                    className="w-full rounded-md"
+                  />
+                </form>
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    Telefon Numarası
+                  </label>
+                  <input
+                    placeholder=""
+                    type="tel"
+                    className="w-full rounded-md"
+                  />
+                </form>
+                <form className="col-span-1 px-2" action="">
+                  <label className=" font-medium" htmlFor="">
+                    Email Adresi
+                  </label>
+                  <input
+                    placeholder="email"
+                    type="email"
+                    className="w-full rounded-md"
+                  />
+                </form>
+              </div>
               <div className="w-[107vh] h-[80vh] p-8 border grid grid-cols-3 grid-rows-6 px-8">
                 <form action="" className=" col-span-1 px-2">
                   <label className=" font-medium" htmlFor="">
@@ -73,8 +133,8 @@ export default function Register(){
                     className="w-full rounded-md "
                   />
                 </form>
-                <div className=" row-span-2 grid grid-cols-2">
-                  <form action="" className=" col-span-1 px-2">
+                <div className=" row-span-1 grid grid-cols-2">
+                  <form action="" className="row-span-2  col-span-1 px-2">
                     <label className=" font-medium" htmlFor="">
                       En
                     </label>
@@ -84,7 +144,7 @@ export default function Register(){
                       className="w-full rounded-md "
                     />
                   </form>
-                  <form action="" className=" col-span-1 px-2">
+                  <form action="" className="row-span-2  col-span-1 px-2">
                     <label className=" font-medium" htmlFor="">
                       Boy
                     </label>
@@ -95,8 +155,8 @@ export default function Register(){
                     />
                   </form>
                 </div>
-                <div className=" row-span-2 grid grid-cols-2">
-                  <form action="" className=" col-span-1 px-2">
+                <div className=" row-span-1 grid grid-cols-2">
+                  <form action="" className="row-span-2  col-span-1 px-2">
                     <label className=" font-medium" htmlFor="">
                       Derinlik
                     </label>
@@ -106,7 +166,7 @@ export default function Register(){
                       className="w-full rounded-md "
                     />
                   </form>
-                  <form action="" className=" col-span-1 px-2">
+                  <form action="" className="row-span-2  col-span-1 px-2">
                     <label className=" font-medium" htmlFor="">
                       m²
                     </label>
@@ -117,8 +177,8 @@ export default function Register(){
                     />
                   </form>
                 </div>
-                <div className=" row-span-2 grid grid-cols-3">
-                  <form action="" className=" col-span-1 px-2">
+                <div className=" row-span-1 grid grid-cols-3">
+                  <form action="" className="row-span-2  col-span-1 px-2">
                     <label className=" font-medium" htmlFor="">
                       İskele
                     </label>
@@ -133,7 +193,7 @@ export default function Register(){
                       <option value="1">KP</option>
                     </select>
                   </form>
-                  <form action="" className=" col-span-2 px-2">
+                  <form action="" className="row-span-2 col-span-2 px-2">
                     <label className=" font-medium" htmlFor="">
                       İskele Numarası
                     </label>
@@ -142,13 +202,43 @@ export default function Register(){
                     </select>
                   </form>
                 </div>
-                <form action="" className=" col-span-1 row-span-3 px-2">
+                <form action="" className="row-span-1 col-span-1  px-2">
                   <label className=" font-medium" htmlFor="">
                     Sigorta Poliçe Numarası
                   </label>
                   <input
                     placeholder="Ruhsat"
                     type="number"
+                    className="w-full rounded-md "
+                  />
+                </form>
+                <form action="" className=" col-span-1 px-2">
+                  <label className=" font-medium" htmlFor="">
+                    Sigorta Geçerlilik Tarihi
+                  </label>
+                  <input
+                    placeholder="Ruhsat"
+                    type="date"
+                    className="w-full rounded-md "
+                  />
+                </form>
+                <form action="" className=" col-span-1 row-start-5 px-2">
+                  <label className=" font-medium" htmlFor="">
+                    Giriş Tarihi
+                  </label>
+                  <input
+                    placeholder="Ruhsat"
+                    type="date"
+                    className="w-full rounded-md "
+                  />
+                </form>
+                <form action="" className=" col-span-1 row-start-5 px-2">
+                  <label className=" font-medium" htmlFor="">
+                    Çıkış Tarihi
+                  </label>
+                  <input
+                    placeholder="Ruhsat"
+                    type="date"
                     className="w-full rounded-md "
                   />
                 </form>
